@@ -24,7 +24,7 @@ jobs:
         sudo mkdir -p /mnt/kernel_workspace
         sudo chmod 0777 /mnt/kernel_workspace
         cd /mnt/kernel_workspace
-        git clone https://github.com/izsdeaman97/GKI-Kernelsu-susfs --depth=1
+        git clone https://github.com/peo1108/GKI-Kernelsu-susfs --depth=1
 
     - name: Download source code
       run: |
@@ -112,7 +112,7 @@ jobs:
           
           # Remove check_defconfig
            sed -i 's/check_defconfig//' ./common/build.config.gki
-           sed -i '$s|echo "\$res"|echo "\$res-g71b43c3e005a-ab10734328"|' ./common/scripts/setlocalversion
+           sed -i '$s|echo "\$res"|echo "\$res-TeaProVcl🥕🐛"|' ./common/scripts/setlocalversion
           
     - name: Build Kernel
       run: |
